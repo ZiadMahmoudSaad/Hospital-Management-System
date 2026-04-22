@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'Doctors' => 'Doctors',
+    'name' => 'Name',
+    'img' => 'Image',
+    'email' => 'Email',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'section' => 'Section',
+    'phone' => 'Phone',
+    'Status' => 'Status',
+    'Enabled'=>'Enabled',
+    'Not_enabled' => "Disabled",
+    'appointments'=>'Appointments',
+    'fees'=> 'Fees',
+    'created_at' => 'Created At',
+    'Processes' => 'Processes',
+    'delete_select' => 'Delete Selected',
+    'delete_doctor'=>'Delete Doctor',
+    'add_doctor' => 'Add Doctor',
+    'Edit_data' => 'Edit Data',
+    'Change_password' => 'Change Password',
+    'update_password' => 'Update Password',
+    'new_password' => 'New Password',
+    'Change_status' => 'Change Status',
+    'Delete_data' => 'Delete Data',
+    'submit'=>'Submit',
+
+];
