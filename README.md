@@ -24,7 +24,7 @@
 
 ## 📋 Overview
 
-Hospital Management System is a feature-rich web application designed to streamline hospital operations including appointment management, doctor scheduling, services management, and multi-language support. Built with Laravel 12, Livewire 4, and Tailwind CSS, it provides a modern and intuitive user experience for both administrators and healthcare professionals.
+Hospital Management System is a feature-rich web application designed to streamline hospital operations including appointment management, doctor scheduling, services management, and multi-language support. Built with Laravel 12,and Livewire 4, it provides a modern and intuitive user experience for both administrators and healthcare professionals.
 
 ## ✨ Features
 
@@ -63,6 +63,9 @@ Hospital Management System is a feature-rich web application designed to streaml
   - Secure file storage
   - Image optimization
 
+- **Insurance Management**
+  - Insurance provider integration
+
 ## 🛠️ Tech Stack
 
 ### Backend
@@ -83,78 +86,6 @@ Hospital Management System is a feature-rich web application designed to streaml
 - **Laravel Translation Manager** - Translation UI
 - **Pest PHP** - Testing framework
 
-## 📦 Requirements
-
-- PHP 8.2 or higher
-- Composer
-- Node.js 18+ and npm/yarn
-- MySQL 8.0+ or MariaDB 10.6+
-- Git
-
-## 🚀 Installation
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/hospitals.git
-cd hospitals
-```
-
-### 2. Install PHP Dependencies
-```bash
-composer install
-```
-
-### 3. Install Node Dependencies
-```bash
-npm install
-```
-
-### 4. Environment Setup
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-### 5. Database Configuration
-Edit the `.env` file and configure your database:
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=hospitals
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-### 6. Run Migrations
-```bash
-php artisan migrate
-```
-
-### 7. Seed Database (Optional)
-```bash
-php artisan db:seed
-```
-
-### 8. Build Frontend Assets
-```bash
-npm run build
-```
-
-## ⚙️ Configuration
-
-### Creating an Admin User
-```bash
-php artisan tinker
-```
-
-```php
-App\Models\admin::create([
-    'name' => 'Admin Name',
-    'email' => 'admin@example.com',
-    'password' => bcrypt('password'),
-]);
-```
 
 ### Language Configuration
 Edit `config/app.php`:
@@ -167,35 +98,6 @@ Edit `config/app.php`:
 The application supports localized routes. Visit:
 - `http://localhost:8000/en/` - English version
 - `http://localhost:8000/ar/` - Arabic version
-
-## 🎯 Usage
-
-### Development Server
-```bash
-php artisan serve
-```
-
-The application will be available at `http://localhost:8000`
-
-### Compile Frontend Assets (Development)
-```bash
-npm run dev
-```
-
-### Compile Frontend Assets (Production)
-```bash
-npm run build
-```
-
-### Run Tests
-```bash
-./vendor/bin/pest
-```
-
-### Code Formatting (Laravel Pint)
-```bash
-./vendor/bin/pint
-```
 
 ## 📁 Project Structure
 
@@ -215,6 +117,7 @@ hospitals/
 │   ├── services/             # Business logic services
 │   └── Traits/               # Reusable traits
 ├── config/                   # Configuration files
+├── lang/                     # Translation files (ar/, en/)
 ├── database/
 │   ├── factories/            # Model factories
 │   ├── migrations/           # Database migrations
@@ -222,7 +125,6 @@ hospitals/
 ├── resources/
 │   ├── css/                  # Stylesheets
 │   ├── js/                   # JavaScript files
-│   ├── lang/                 # Translation files (ar/, en/)
 │   └── views/                # Blade templates
 ├── routes/                   # Route definitions
 ├── storage/                  # Application storage
@@ -279,74 +181,9 @@ The application supports multiple languages with dynamic switching:
 - العربية - Arabic (ar)
 
 Translation keys are located in:
-- `resources/lang/en/` - English translations
-- `resources/lang/ar/` - Arabic translations
+- `lang/en/` - English translations
+- `lang/ar/` - Arabic translations
 
-## 📚 API Structure
-
-The application follows RESTful API principles:
-- Controllers in `App\Http\Controllers`
-- Resource routing enabled
-- Form request validation for data integrity
-- Consistent JSON responses
-
-## 🚢 Deployment
-
-### Using Laravel Sail (Docker)
-```bash
-./vendor/bin/sail up
-```
-
-### Traditional Server
-1. Upload project to server
-2. Install dependencies: `composer install`
-3. Install Node dependencies: `npm install`
-4. Build assets: `npm run build`
-5. Configure `.env` for production
-6. Run migrations: `php artisan migrate --force`
-7. Set proper permissions on `storage/` and `bootstrap/cache/`
-
-## 📝 Environment Variables
-
-Key environment variables to configure:
-
-```env
-APP_NAME=Hospital
-APP_ENV=production
-APP_DEBUG=false
-APP_URL=https://yourdomain.com
-
-DB_CONNECTION=mysql
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=hospitals
-DB_USERNAME=root
-DB_PASSWORD=
-
-MAIL_DRIVER=smtp
-MAIL_HOST=smtp.mailtrap.io
-MAIL_PORT=2525
-```
-
-## 🆘 Troubleshooting
-
-### Clear Cache Issues
-```bash
-php artisan cache:clear
-php artisan config:clear
-php artisan view:clear
-php artisan route:clear
-```
-
-### Rebuild Assets
-```bash
-npm run build
-```
-
-### Reset Database
-```bash
-php artisan migrate:refresh --seed
-```
 
 ## 📄 Contributing
 
@@ -370,7 +207,7 @@ This project is open-source software licensed under the [MIT license](LICENSE).
 
 ## 👥 Support
 
-For support, email support@example.com or open an issue in the repository.
+For support, email ziadmahmoud55500@gmail.com or open an issue in the repository.
 
 ## 🙏 Acknowledgments
 

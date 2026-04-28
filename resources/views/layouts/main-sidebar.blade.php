@@ -42,7 +42,7 @@
                         <ul class="slide-menu">
                             <li><a class="slide-item" href="{{route('Service.index')}}">{{trans('Dashboard/main-sidebar.Single_service')}}</a></li>
                             <li><a class="slide-item" href="{{route('Add_GroupServices')}}">{{trans('Dashboard/main-sidebar.group_services')}}</a></li>
-                            <li><a class="slide-item" href="#">{{trans('Dashboard/main-sidebar.Insurance')}}</a></li>
+                            <li><a class="slide-item" href="{{route('insurance.index') }}">{{trans('Dashboard/main-sidebar.Insurance')}}</a></li>
                             <li><a class="slide-item" href="#">{{trans('Dashboard/main-sidebar.ambulance')}}</a></li>
                             <li><a class="slide-item" href="#">{{trans('Dashboard/main-sidebar.Ambulance_calls')}}</a></li>
                         </ul>

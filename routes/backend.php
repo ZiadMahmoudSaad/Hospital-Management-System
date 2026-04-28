@@ -7,6 +7,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Dashboard\SectionController;
 use App\Http\Controllers\Dashboard\DoctorController;
 use App\Http\Controllers\Dashboard\SingleServiceController;
+use App\Http\Controllers\Dashboard\InsuranceController;
 
 use App\Livewire\GroupServices\CreateGroupServices;
 
@@ -48,6 +49,12 @@ Route::middleware([ 'auth:admin'])->group(function () {
         // Route::view('Add_GroupServices','livewire.group_services.include_create')->name('Add_GroupServices');
 
        //################################ End Service Routes #########################################
+
+               //############################# insurance route ##########################################
+
+        Route::resource('insurance', InsuranceController::class);
+
+        //############################# End insurance route ######################################
         // Route::put('doctors/{id}/update_appointment', [DoctorController::class,'update_appointment'])->name('Doctors.update_appointment');
 });
 
