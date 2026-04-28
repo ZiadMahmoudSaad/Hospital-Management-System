@@ -23,13 +23,27 @@ class StoreDoctorRequest extends FormRequest
     {
         return [
             'email' => 'required|email|unique:doctors,email',
+            "password" => 'required|sometimes',
+            "phone" => 'required|numeric|unique:doctors,phone,' . $this->id,
+            "name" => 'required|regex:/^[A-Za-z0-9-أ-ي-pL\s\-]+$/u',
+            "appointments" => 'required',
+            "section_id" => 'required',
         ];
     }
 
     public function messages()
     {
         return [
-            'email.unique' => 'This email already exists. Please use another one.',
+            'email.required' => trans('validation.required'),
+            'email.email' => trans('validation.email'),
+            'email.unique' => trans('validation.unique'),
+            'password.required' => trans('validation.required'),
+            'phone.required' => trans('validation.required'),
+            'phone.numeric' => trans('validation.numeric'),
+            'phone.unique' => trans('validation.unique'),
+            'name.required' => trans('validation.required'),
+            'name.regex' => trans('validation.regex'),
+            'section_id.required' => trans('validation.required'),
         ];
     }
 }
