@@ -53,18 +53,18 @@ Hospital Management System is a feature-rich web application designed to streaml
   - Role-based access control with Laravel Fortify
   - Admin dashboard with comprehensive controls
 
-- **Responsive Design**
-  - Mobile-friendly interface
-  - Modern UI with Tailwind CSS
-  - Accessible components with Alpine.js
 
 - **Image Management**
-  - Upload and manage doctor/service images
+  - Upload and manage doctor images
   - Secure file storage
   - Image optimization
 
 - **Insurance Management**
   - Insurance provider integration
+
+- **Ambulance Management**
+  - Manage ambulance vehicles and drivers
+  - Track availability and assignments
 
 ## 🛠️ Tech Stack
 
@@ -72,12 +72,6 @@ Hospital Management System is a feature-rich web application designed to streaml
 - **Laravel 12** - Web application framework
 - **PHP 8.2+** - Server-side language
 - **MySQL/MariaDB** - Database
-
-### Frontend
-- **Livewire 4** - Reactive components
-- **Tailwind CSS** - Utility-first CSS framework
-- **Alpine.js** - Lightweight JavaScript framework
-- **Vite** - Next-generation frontend tooling
 
 ### Additional Libraries
 - **Laravel Fortify** - Authentication scaffolding
