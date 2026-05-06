@@ -66,6 +66,9 @@ Hospital Management System is a feature-rich web application designed to streaml
   - Manage ambulance vehicles and drivers
   - Track availability and assignments
 
+- **Patient Management**
+  - Patient profiles
+
 ## 🛠️ Tech Stack
 
 ### Backend

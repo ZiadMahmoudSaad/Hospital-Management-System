@@ -9,6 +9,7 @@ use App\Http\Controllers\Dashboard\DoctorController;
 use App\Http\Controllers\Dashboard\SingleServiceController;
 use App\Http\Controllers\Dashboard\InsuranceController;
 use App\Http\Controllers\Dashboard\AmbulanceController;
+use App\Http\Controllers\Dashboard\PatientController;
 use App\Livewire\GroupServices\CreateGroupServices;
 
 //################################ Admin Routes ##############################################
@@ -61,6 +62,12 @@ Route::middleware([ 'auth:admin'])->group(function () {
         Route::resource('Ambulance', AmbulanceController::class);
 
         //############################# end Ambulance route ######################################
+
+        //############################# Patients route ##########################################
+
+        Route::resource('Patients', PatientController::class);
+
+        //############################# end Patients route ######################################
 
         // Route::put('doctors/{id}/update_appointment', [DoctorController::class,'update_appointment'])->name('Doctors.update_appointment');
 });

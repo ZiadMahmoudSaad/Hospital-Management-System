@@ -16,5 +16,8 @@ return [
     'ambulance' => 'الاسعاف',
     'Ambulance_calls' => 'مكالمات الاسعاف',
     'Insurance' => 'شركات التامين',
+    'patients' => 'المرضى',
+    'Patients_list' => 'قائمة المرضي',
+    'add_patient' => 'اضافة مريض',
 
 ];

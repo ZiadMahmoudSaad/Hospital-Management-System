@@ -16,6 +16,9 @@ return [
     'ambulance' => 'Ambulance',
     'Ambulance_calls' => 'Ambulance calls',
     'Insurance' => 'Insurance',
+    'patients' => 'Patients',
+    'Patients_list' => 'Patients list',
+    'add_patient' => 'Add patient',
 
 
 ];
